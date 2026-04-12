@@ -18,3 +18,4 @@ Pagina pessoal estatica desenvolvida em HTML e CSS puro para a disciplina de Des
 ## Visual
 
 O projeto usa uma estetica inspirada em terminal/Linux, com tipografia JetBrains Mono, tema escuro e layout responsivo.
+# Personal-Website
