@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arthur de Farias Salmoria | Página Pessoal</title>
+    <link href="favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="tema-terminal">
+    <header class="curriculo topo topo-pagina">
+      <section class="topo-apresentacao">
+        <section class="perfil-principal">
+          <p class="prompt-line">whoami</p>
+          <section class="perfil-resumo">
+            <img
+              class="foto-perfil foto-topo"
+              src="minha_foto.jpeg"
+              alt="Foto de Arthur de Farias Salmoria"
+            />
+            <section class="topo-infos">
+              <p class="identificador">arthur@workstation</p>
+              <h1>Arthur de Farias Salmoria</h1>
+              <p class="cargo">
+                Desenvolvedor de software e estudante de Sistemas de Informação
+              </p>
+              <p class="localizacao">Florianópolis, Santa Catarina, Brasil</p>
+            </section>
+          </section>
+
+          <ul class="status-chips" aria-label="Tecnologias e áreas de atuação">
+            <li>Go</li>
+            <li>Python</li>
+            <li>Linux</li>
+            <li>Docker</li>
+            <li>Hyperledger</li>
+            <li>TypeScript</li>
+          </ul>
+        </section>
+
+        <aside class="terminal-card" aria-label="Resumo rápido em formato de terminal">
+          <div class="terminal-bar" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p class="terminal-title">session.log</p>
+          <pre><code>status: online
+role: software developer @ labsec
+project: rrdes | mec
+focus: go | security | blockchain
+stack: linux | docker | hyperledger
+certs: security | java | ai</code></pre>
+        </aside>
+      </section>
+
+      <nav class="navegacao" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#sobre-mim">Sobre mim</a></li>
+          <li><a href="#resumo-academico">Destaques</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#certificacoes">Certificações</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="html_dict.html">Dicionário HTML</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="curriculo conteudo-principal">
+      <section id="sobre-mim" class="painel painel-largo">
+        <h2>Sobre mim</h2>
+        <p>
+          Sou Software Developer no LabSEC e estudante de Sistemas de
+          Informação na UFSC, com uma base forte em lógica, algoritmos e
+          engenharia de software.
+        </p>
+        <p>
+          Minha atuação e meus estudos estão concentrados em desenvolvimento de
+          software, matemática aplicada e segurança da informação, com interesse
+          especial em blockchain, criptografia e aplicações descentralizadas.
+        </p>
+        <p>
+          Atualmente trabalho no RRDES, projeto do Ministério da Educação
+          voltado à rastreabilidade de dados do ensino superior, desenvolvendo
+          soluções em Go para redes permissionadas com Hyperledger Fabric. A
+          experiência paralela com produção audiovisual também reforçou minha
+          organização, atenção aos detalhes e capacidade de resolver problemas
+          de forma criativa e estruturada.
+        </p>
+      </section>
+
+      <section id="resumo-academico" class="painel painel-largo">
+        <h2>Destaques</h2>
+        <div class="cards-resumo">
+          <article class="card-resumo">
+            <p class="rotulo-meta">LabSEC</p>
+            <p class="titulo-card">Software Developer</p>
+            <p>Atuação em soluções voltadas à segurança, rastreabilidade e integração.</p>
+          </article>
+
+          <article class="card-resumo">
+            <p class="rotulo-meta">RRDES / MEC</p>
+            <p class="titulo-card">Blockchain permissionada</p>
+            <p>Projeto com foco em dados auditáveis, rastreáveis e resistentes a adulteração.</p>
+          </article>
+
+          <article class="card-resumo">
+            <p class="rotulo-meta">Certificações</p>
+            <p class="titulo-card">Segurança, backend e IA</p>
+            <p>Trilha complementar com Google, IBM, DIO, Fundação Bradesco, IE University e CIEE.</p>
+          </article>
+
+          <article class="card-resumo">
+            <p class="rotulo-meta">Ambiente de trabalho</p>
+            <p class="titulo-card">Linux + Docker</p>
+            <p>Rotina centrada em backend, automação, containers e ferramentas de engenharia.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experiencia" class="painel painel-largo">
+        <h2>Experiência</h2>
+        <div class="grade-experiencia">
+          <article class="card-detalhe">
+            <p class="rotulo-meta">nov/2025 - atual</p>
+            <p class="titulo-card">Software Developer · LabSEC</p>
+            <p class="texto-secundario">
+              Trabalho no projeto RRDES, iniciativa ligada ao MEC para
+              rastreabilidade de dados e credenciais acadêmicas.
+            </p>
+            <ul class="lista-terminal lista-compacta">
+              <li>Desenvolvimento de chaincodes em Go para Hyperledger Fabric.</li>
+              <li>Integração com APIs, regras de negócio e validação de dados em XML/XSD.</li>
+              <li>Contato com OAuth2/OIDC, JWT, Docker, Nginx, CI/CD e ambientes com Kubernetes.</li>
+            </ul>
+          </article>
+
+          <article class="card-detalhe">
+            <p class="rotulo-meta">jan/2026 - atual</p>
+            <p class="titulo-card">Founder · Preparação DataDriven</p>
+            <p class="texto-secundario">
+              Plataforma data-driven criada para ajudar estudantes a diagnosticar
+              desempenho, definir metas e evoluir a preparação para vestibular.
+            </p>
+            <ul class="lista-terminal lista-compacta">
+              <li>Simulação oficial da UFSC, dashboards, relatórios e metas por curso.</li>
+              <li>Arquitetura com separação clara entre frontend, backend, domínio e dados.</li>
+              <li>Stack com React, TypeScript, NestJS, Prisma, PostgreSQL e Supabase Auth.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="painel painel-largo">
+        <h2>Stack e competências</h2>
+        <div class="grade-stack">
+          <article class="card-detalhe">
+            <p class="rotulo-meta">Linguagens</p>
+            <ul class="tags-tecnologia" aria-label="Linguagens principais">
+              <li>Go</li>
+              <li>Python</li>
+              <li>TypeScript</li>
+              <li>Java</li>
+            </ul>
+          </article>
+
+          <article class="card-detalhe">
+            <p class="rotulo-meta">Backend e dados</p>
+            <ul class="tags-tecnologia" aria-label="Tecnologias de backend e dados">
+              <li>REST APIs</li>
+              <li>Gin</li>
+              <li>NestJS</li>
+              <li>Prisma</li>
+              <li>PostgreSQL</li>
+              <li>XML/XSD</li>
+            </ul>
+          </article>
+
+          <article class="card-detalhe">
+            <p class="rotulo-meta">Segurança e blockchain</p>
+            <ul class="tags-tecnologia" aria-label="Tecnologias de segurança e blockchain">
+              <li>Hyperledger Fabric</li>
+              <li>JWT</li>
+              <li>OAuth2/OIDC</li>
+              <li>OpenSSL</li>
+              <li>Criptografia</li>
+              <li>Chaincodes</li>
+            </ul>
+          </article>
+
+          <article class="card-detalhe">
+            <p class="rotulo-meta">Infra e produto</p>
+            <ul class="tags-tecnologia" aria-label="Ferramentas de infraestrutura e produto">
+              <li>Linux</li>
+              <li>Docker</li>
+              <li>Nginx</li>
+              <li>Kubernetes</li>
+              <li>Git</li>
+              <li>React</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="interesses" class="painel">
+        <h2>Áreas de interesse</h2>
+        <ul class="lista-terminal">
+          <li>Engenharia de software e arquitetura de sistemas</li>
+          <li>Segurança da informação e desenvolvimento seguro</li>
+          <li>Matemática aplicada e modelagem de sistemas</li>
+          <li>Blockchain, criptografia e aplicações descentralizadas</li>
+          <li>Inteligência artificial aplicada à segurança</li>
+        </ul>
+      </section>
+
+      <section id="projetos" class="painel painel-largo">
+        <h2>Projetos em destaque</h2>
+        <div class="grade-projetos">
+          <article class="card-detalhe projeto-card">
+            <p class="rotulo-meta">Produto autoral</p>
+            <p class="titulo-card">Preparação DataDriven</p>
+            <p>
+              Plataforma construída para estudantes do vestibular da UFSC, com
+              simulação oficial, análise de metas, dashboards e módulos de
+              apoio ao estudo.
+            </p>
+            <p class="texto-secundario">
+              React, TypeScript, NestJS, Prisma, PostgreSQL e Supabase Auth.
+            </p>
+            <div class="links-card">
+              <a href="https://www.preparacaodatadriven.com.br/" target="_blank" rel="noreferrer">
+                Live demo
+              </a>
+            </div>
+          </article>
+
+          <article class="card-detalhe projeto-card">
+            <p class="rotulo-meta">Produto full stack</p>
+            <p class="titulo-card">Finance Buddy</p>
+            <p>
+              Gerenciador financeiro com foco em segurança, confiabilidade e
+              arquitetura modular para transações, metas, orçamento e
+              investimentos.
+            </p>
+            <p class="texto-secundario">
+              React, TypeScript, NestJS, Prisma, PostgreSQL e autenticação com JWT.
+            </p>
+            <div class="links-card">
+              <a href="https://financebuddy-five.vercel.app/" target="_blank" rel="noreferrer">
+                Live demo
+              </a>
+            </div>
+          </article>
+
+          <article class="card-detalhe projeto-card">
+            <p class="rotulo-meta">Open source</p>
+            <p class="titulo-card">Digital Certification in Java</p>
+            <p>
+              Implementação de conceitos de certificação digital, programação
+              orientada a objetos e fundamentos de segurança usando Java.
+            </p>
+            <p class="texto-secundario">Java, criptografia e orientação a objetos.</p>
+            <div class="links-card">
+              <a href="https://github.com/salmoriadev/Processo_seletivo_LabSEC/tree/main/Desafio_Final/hiring-0.2.3" target="_blank" rel="noreferrer">
+                Ver projeto
+              </a>
+            </div>
+          </article>
+
+          <article class="card-detalhe projeto-card">
+            <p class="rotulo-meta">Open source</p>
+            <p class="titulo-card">Digital Certification in Go</p>
+            <p>
+              Implementação de conceitos de criptografia e padrões de projeto
+              em Go, conectando teoria de segurança com prática de código.
+            </p>
+            <p class="texto-secundario">Go, criptografia e design patterns.</p>
+            <div class="links-card">
+              <a href="https://github.com/salmoriadev/aprendendo_go/tree/main/cripto" target="_blank" rel="noreferrer">
+                Ver projeto
+              </a>
+            </div>
+          </article>
+
+          <article class="card-detalhe projeto-card">
+            <p class="rotulo-meta">Projeto acadêmico</p>
+            <p class="titulo-card">Sistema CaFerri</p>
+            <p>
+              Sistema em Python com organização em MVC para gestão de e-commerce,
+              persistência de dados e regras de negócio consistentes.
+            </p>
+            <p class="texto-secundario">Python, POO, MVC e persistência local.</p>
+            <div class="links-card">
+              <a href="https://github.com/salmoriadev/Sistema_CaFerri" target="_blank" rel="noreferrer">
+                Ver projeto
+              </a>
+            </div>
+          </article>
+
+          <article class="card-detalhe projeto-card">
+            <p class="rotulo-meta">Mais repositórios</p>
+            <p class="titulo-card">GitHub · salmoriadev</p>
+            <p>
+              Perfil com outros experimentos, estudos, implementações acadêmicas
+              e projetos públicos em evolução.
+            </p>
+            <p class="texto-secundario">Go, Java, Python, TypeScript e mais.</p>
+            <div class="links-card">
+              <a href="https://github.com/salmoriadev" target="_blank" rel="noreferrer">
+                Abrir GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="certificacoes" class="painel painel-largo">
+        <h2>Certificações</h2>
+        <div class="grade-certificacoes">
+          <article class="card-detalhe">
+            <p class="rotulo-meta">Segurança</p>
+            <p class="titulo-card">Base forte em cybersecurity</p>
+            <p class="texto-secundario">
+              Formação complementar com foco em redes, ameaças, defesa,
+              automação, Linux e operações de segurança.
+            </p>
+            <ul class="lista-terminal lista-compacta">
+              <li>Google Cybersecurity Professional Certificate · Google · ago/2025</li>
+              <li>Security Operations Center in Practice · IBM · mai/2025</li>
+              <li>Cybersecurity Fundamentals · IBM · mai/2025</li>
+              <li>Information Security · Fundação Bradesco · jul/2025</li>
+            </ul>
+          </article>
+
+          <article class="card-detalhe">
+            <p class="rotulo-meta">IA e prompting</p>
+            <p class="titulo-card">Uso prático de IA</p>
+            <p class="texto-secundario">
+              Cursos voltados a fundamentos de IA, prompting e aplicação
+              prática em fluxos de estudo, negócio e produtividade.
+            </p>
+            <ul class="lista-terminal lista-compacta">
+              <li>Google AI Essentials · Google · jul/2025</li>
+              <li>Introduction to Prompt Engineering · DIO · jun/2025</li>
+              <li>Artificial Intelligence for Small and Medium-Sized Businesses · Fundação Bradesco · mai/2025</li>
+              <li>Demystifying the Pillars of Artificial Intelligence (AI) · DIO · abr/2025</li>
+            </ul>
+          </article>
+
+          <article class="card-detalhe">
+            <p class="rotulo-meta">Backend e qualidade</p>
+            <p class="titulo-card">Java, Python e testes</p>
+            <p class="texto-secundario">
+              Trilha orientada a backend com Java e Python, incluindo TDD,
+              FastAPI, bancos de dados e boas práticas de desenvolvimento.
+            </p>
+            <ul class="lista-terminal lista-compacta">
+              <li>Santander 2025 - Back-End with Java · DIO · ago/2025</li>
+              <li>Test-Driven Development with Java · DIO · ago/2025</li>
+              <li>Vivo - Python AI Backend Developer · DIO · abr/2025</li>
+              <li>SQL and NoSQL Databases for Backend Development · DIO · abr/2025</li>
+            </ul>
+          </article>
+
+          <article class="card-detalhe">
+            <p class="rotulo-meta">Dados e cloud</p>
+            <p class="titulo-card">Formação complementar</p>
+            <p class="texto-secundario">
+              Cursos de apoio para ampliar repertório em ciência de dados,
+              infraestrutura e computação em nuvem.
+            </p>
+            <ul class="lista-terminal lista-compacta">
+              <li>Introduction to Data Science · IE University · mai/2025</li>
+              <li>Cloud Computing · CIEE · mai/2025</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="formacao" class="painel painel-largo">
+        <h2>Formação e idiomas</h2>
+        <div class="grade-formacao">
+          <article class="mini-painel">
+            <p class="rotulo-meta">Formação</p>
+            <p class="titulo-card">UFSC · Sistemas de Informação</p>
+            <p>Bacharelado com previsão de conclusão em 2029.</p>
+          </article>
+
+          <article class="mini-painel">
+            <p class="rotulo-meta">Idiomas</p>
+            <p class="titulo-card">Português e inglês</p>
+            <p>Português nativo e inglês em nível avançado.</p>
+          </article>
+
+          <article class="mini-painel">
+            <p class="rotulo-meta">Comunidade</p>
+            <p class="titulo-card">Voluntariado na UFSC</p>
+            <p>
+              Participação voluntária na feira dos cursos e computação,
+              conversando com vestibulandos e apresentando o curso.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <section class="rodape-conteudo">
+        <p class="rodape-titulo">contato</p>
+        <address class="rodape-contatos">
+          <a href="mailto:salmoria.dev@gmail.com">salmoria.dev@gmail.com</a>
+          <a href="https://www.linkedin.com/in/arthursalmoria/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a href="https://github.com/salmoriadev" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <span>Florianópolis, SC</span>
+        </address>
+      </section>
+    </footer>
+  </body>
+</html>
