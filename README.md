@@ -1,21 +1,65 @@
-# Pagina Pessoal
+# Arthur Salmoria — Portfolio
 
-Pagina pessoal estatica desenvolvida em HTML e CSS puro para a disciplina de Desenvolvimento de Sistemas Web.
+Professional portfolio focused on backend engineering, blockchain infrastructure,
+distributed systems, financial workflows, and security.
 
-## Estrutura
+## Live site
 
-- `index.html`: pagina principal com perfil, experiencia, stack, projetos e certificacoes
-- `html_dict.html`: dicionario das tags HTML utilizadas no projeto
-- `style.css`: estilos responsivos com layout em grid, flex e media queries
-- `minha_foto.jpeg`: foto usada na pagina principal
-- `favicon.svg`: icone da pagina
+[personalwebsite-tau-kohl.vercel.app](https://personalwebsite-tau-kohl.vercel.app/)
 
-## Tecnologias
+## Featured projects
 
-- HTML5
-- CSS3
+- [Nexus Market Observer](https://github.com/salmoriadev/nexus-market-observer) —
+  fault-tolerant Rust market-data service with PostgreSQL history and observability.
+- [TrustWork](https://github.com/salmoriadev/TrustWork) — Base Sepolia milestone
+  escrow, evidence digests, and an idempotent event indexer. Testnet only.
+- [FinanceBuddy](https://github.com/salmoriadev/FinanceBuddy) — modular Node.js and
+  NestJS backend for manually managed personal-finance workflows.
 
-## Visual
+## Technology
 
-O projeto usa uma estetica inspirada em terminal/Linux, com tipografia JetBrains Mono, tema escuro e layout responsivo.
-# Personal-Website
+The site remains intentionally small: semantic HTML5, modern CSS, optimized WebP
+assets, and no client-side framework or runtime data dependency.
+
+## Local development
+
+Serve the repository from its root so absolute and relative asset links behave like
+the production deployment:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000/`.
+
+## Accessibility and performance
+
+- Semantic landmarks and a single page-level heading
+- Skip link, visible focus states, keyboard-operable navigation, and 44 px controls
+- Responsive layouts tested from 360 px through 1440 px
+- Reduced-motion support and useful alternative text
+- Width and height attributes on images to reduce layout shift
+- No JavaScript bundle, icon font, analytics, or runtime API request
+
+Lighthouse results measured from the local static server on 2026-08-21:
+
+| Profile | Performance | Accessibility | Best Practices | SEO |
+| --- | ---: | ---: | ---: | ---: |
+| Mobile | 100 | 100 | 100 | 100 |
+| Desktop | 100 | 100 | 100 | 100 |
+
+Scores are measurements, not guarantees; browser, network, and hosting conditions can
+change them.
+
+## Deployment
+
+The repository is deployed as a static site on Vercel. No build command or server
+runtime is required.
+
+## License
+
+The portfolio's personal copy, resume, and portrait are not licensed for reuse.
+Individual featured projects use the licenses declared in their own repositories.
+
+Originally created as a static web-development project and later redesigned into a
+professional engineering portfolio.
