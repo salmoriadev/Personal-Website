@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /html_dict.html
+
+Sitemap: https://personalwebsite-tau-kohl.vercel.app/sitemap.xml
