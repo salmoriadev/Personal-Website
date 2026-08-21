@@ -1,425 +1,808 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Arthur de Farias Salmoria | Página Pessoal</title>
+    <title>Arthur Salmoria — Backend &amp; Blockchain Developer</title>
+    <meta
+      name="description"
+      content="Backend and blockchain developer working with Go, Rust, PostgreSQL, Hyperledger Fabric, Node.js, and reliable distributed systems."
+    />
+    <meta name="author" content="Arthur de Farias Salmoria" />
+    <meta name="theme-color" content="#090b0f" />
+    <link rel="canonical" href="https://personalwebsite-tau-kohl.vercel.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Arthur Salmoria — Portfolio" />
+    <meta property="og:title" content="Arthur Salmoria — Backend &amp; Blockchain Developer" />
+    <meta
+      property="og:description"
+      content="Go, Rust, PostgreSQL, blockchain infrastructure, financial systems, and security-first engineering."
+    />
+    <meta property="og:url" content="https://personalwebsite-tau-kohl.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://personalwebsite-tau-kohl.vercel.app/assets/social/og-image.webp"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Arthur Salmoria, Backend and Blockchain Developer in Florianopolis, Brazil"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arthur Salmoria — Backend &amp; Blockchain Developer" />
+    <meta
+      name="twitter:description"
+      content="Go, Rust, PostgreSQL, blockchain infrastructure, financial systems, and security-first engineering."
+    />
+    <meta
+      name="twitter:image"
+      content="https://personalwebsite-tau-kohl.vercel.app/assets/social/og-image.webp"
+    />
+
     <link href="favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="site.webmanifest" rel="manifest" />
     <link href="style.css" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Arthur de Farias Salmoria",
+        "alternateName": "Arthur Salmoria",
+        "jobTitle": "Backend & Blockchain Developer",
+        "email": "mailto:salmoria.dev@gmail.com",
+        "url": "https://personalwebsite-tau-kohl.vercel.app/",
+        "sameAs": [
+          "https://www.linkedin.com/in/arthursalmoria/",
+          "https://github.com/salmoriadev"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidade Federal de Santa Catarina",
+          "sameAs": "https://ufsc.br/"
+        },
+        "knowsAbout": [
+          "Backend engineering",
+          "Go",
+          "Rust",
+          "Node.js",
+          "PostgreSQL",
+          "Hyperledger Fabric",
+          "Blockchain infrastructure",
+          "Distributed systems",
+          "Application security"
+        ]
+      }
+    </script>
   </head>
-  <body class="tema-terminal">
-    <header class="curriculo topo topo-pagina">
-      <section class="topo-apresentacao">
-        <section class="perfil-principal">
-          <p class="prompt-line">whoami</p>
-          <section class="perfil-resumo">
-            <img
-              class="foto-perfil foto-topo"
-              src="minha_foto.jpeg"
-              alt="Foto de Arthur de Farias Salmoria"
-            />
-            <section class="topo-infos">
-              <p class="identificador">arthur@workstation</p>
-              <h1>Arthur de Farias Salmoria</h1>
-              <p class="cargo">
-                Desenvolvedor de software e estudante de Sistemas de Informação
-              </p>
-              <p class="localizacao">Florianópolis, Santa Catarina, Brasil</p>
-            </section>
-          </section>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-          <ul class="status-chips" aria-label="Tecnologias e áreas de atuação">
-            <li>Go</li>
-            <li>Python</li>
-            <li>Linux</li>
-            <li>Docker</li>
-            <li>Hyperledger</li>
-            <li>TypeScript</li>
-          </ul>
-        </section>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="site-brand" href="#top" aria-label="Arthur Salmoria, back to top">
+          <span class="brand-mark" aria-hidden="true">AS</span>
+          <span>Arthur Salmoria</span>
+        </a>
 
-        <aside class="terminal-card" aria-label="Resumo rápido em formato de terminal">
-          <div class="terminal-bar" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a
+            class="nav-resume"
+            href="assets/Arthur_Salmoria_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Arthur_Salmoria_Resume.pdf"
+          >Resume</a>
+        </nav>
+
+        <details class="mobile-nav">
+          <summary>Menu</summary>
+          <nav aria-label="Mobile navigation">
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a
+              href="assets/Arthur_Salmoria_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Arthur_Salmoria_Resume.pdf"
+            >Resume</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Arthur Salmoria · Florianopolis, Brazil · LATAM</p>
+          <h1 id="hero-title">Backend &amp; Blockchain Developer</h1>
+          <p class="hero-lead">
+            I build reliable backend and blockchain infrastructure with Go, Rust,
+            PostgreSQL, and security-first engineering practices.
+          </p>
+          <p class="hero-summary">
+            Software Developer at LabSEC working on backend and Hyperledger Fabric
+            infrastructure for Brazil's higher-education traceability network. I also
+            build Rust, EVM, and Node.js systems focused on reliability, financial
+            workflows, and verifiable execution.
+          </p>
+
+          <p class="hero-meta">
+            Software Developer at LabSEC <span aria-hidden="true">·</span>
+            B.S. Information Systems at UFSC
+          </p>
+
+          <div class="button-row" role="group" aria-label="Primary links">
+            <a class="button button-primary" href="#work">View selected work</a>
+            <a
+              class="button button-secondary"
+              href="assets/Arthur_Salmoria_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Arthur_Salmoria_Resume.pdf"
+            >Download resume</a>
+            <a
+              class="button button-quiet"
+              href="https://github.com/salmoriadev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub <span aria-hidden="true">↗</span></a>
+            <a
+              class="button button-quiet"
+              href="https://www.linkedin.com/in/arthursalmoria/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="terminal-title">session.log</p>
-          <pre><code>status: online
-role: software developer @ labsec
-project: rrdes | mec
-focus: go | security | blockchain
-stack: linux | docker | hyperledger
-certs: security | java | ai</code></pre>
+
+          <a class="email-link" href="mailto:salmoria.dev@gmail.com">salmoria.dev@gmail.com</a>
+
+          <ul class="stack-list" aria-label="Core technology stack">
+            <li>Go</li>
+            <li>Rust</li>
+            <li>Node.js</li>
+            <li>PostgreSQL</li>
+            <li>Hyperledger Fabric</li>
+            <li>Solidity</li>
+          </ul>
+        </div>
+
+        <aside class="profile-card" aria-label="Arthur's current focus">
+          <img
+            class="profile-photo"
+            src="assets/profile/arthur-salmoria.webp"
+            alt="Arthur Salmoria"
+            width="640"
+            height="640"
+            decoding="async"
+          />
+          <div>
+            <p class="profile-status"><span aria-hidden="true"></span> Open to backend opportunities</p>
+            <dl class="profile-details">
+              <div>
+                <dt>Current</dt>
+                <dd>Software Developer @ LabSEC</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Rust · Go · distributed systems</dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Florianopolis · LATAM</dd>
+              </div>
+            </dl>
+          </div>
         </aside>
       </section>
 
-      <nav class="navegacao" aria-label="Navegação principal">
-        <ul>
-          <li><a href="#sobre-mim">Sobre mim</a></li>
-          <li><a href="#resumo-academico">Destaques</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#stack">Stack</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#certificacoes">Certificações</a></li>
-          <li><a href="#formacao">Formação</a></li>
-          <li><a href="html_dict.html">Dicionário HTML</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="curriculo conteudo-principal">
-      <section id="sobre-mim" class="painel painel-largo">
-        <h2>Sobre mim</h2>
-        <p>
-          Sou Software Developer no LabSEC e estudante de Sistemas de
-          Informação na UFSC, com uma base forte em lógica, algoritmos e
-          engenharia de software.
-        </p>
-        <p>
-          Minha atuação e meus estudos estão concentrados em desenvolvimento de
-          software, matemática aplicada e segurança da informação, com interesse
-          especial em blockchain, criptografia e aplicações descentralizadas.
-        </p>
-        <p>
-          Atualmente trabalho no RRDES, projeto do Ministério da Educação
-          voltado à rastreabilidade de dados do ensino superior, desenvolvendo
-          soluções em Go para redes permissionadas com Hyperledger Fabric. A
-          experiência paralela com produção audiovisual também reforçou minha
-          organização, atenção aos detalhes e capacidade de resolver problemas
-          de forma criativa e estruturada.
-        </p>
-      </section>
-
-      <section id="resumo-academico" class="painel painel-largo">
-        <h2>Destaques</h2>
-        <div class="cards-resumo">
-          <article class="card-resumo">
-            <p class="rotulo-meta">LabSEC</p>
-            <p class="titulo-card">Software Developer</p>
-            <p>Atuação em soluções voltadas à segurança, rastreabilidade e integração.</p>
-          </article>
-
-          <article class="card-resumo">
-            <p class="rotulo-meta">RRDES / MEC</p>
-            <p class="titulo-card">Blockchain permissionada</p>
-            <p>Projeto com foco em dados auditáveis, rastreáveis e resistentes a adulteração.</p>
-          </article>
-
-          <article class="card-resumo">
-            <p class="rotulo-meta">Certificações</p>
-            <p class="titulo-card">Segurança, backend e IA</p>
-            <p>Trilha complementar com Google, IBM, DIO, Fundação Bradesco, IE University e CIEE.</p>
-          </article>
-
-          <article class="card-resumo">
-            <p class="rotulo-meta">Ambiente de trabalho</p>
-            <p class="titulo-card">Linux + Docker</p>
-            <p>Rotina centrada em backend, automação, containers e ferramentas de engenharia.</p>
-          </article>
+      <section class="impact-section" aria-labelledby="impact-title">
+        <div class="section-shell">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Measured outcomes</p>
+            <h2 id="impact-title">Proof in the implementation</h2>
+          </div>
+          <div class="impact-grid">
+            <article>
+              <strong>87.5%</strong>
+              <p>fewer eligible legacy private histories</p>
+            </article>
+            <article>
+              <strong>66.8%</strong>
+              <p>lower observed pvtdataStore growth</p>
+            </article>
+            <article>
+              <strong>41</strong>
+              <p>automated tests in Nexus Market Observer</p>
+            </article>
+            <article>
+              <strong>5</strong>
+              <p>read-only REST endpoints</p>
+            </article>
+          </div>
+          <p class="benchmark-note">
+            Storage results were measured in a controlled local Hyperledger Fabric benchmark.
+          </p>
         </div>
       </section>
 
-      <section id="experiencia" class="painel painel-largo">
-        <h2>Experiência</h2>
-        <div class="grade-experiencia">
-          <article class="card-detalhe">
-            <p class="rotulo-meta">nov/2025 - atual</p>
-            <p class="titulo-card">Software Developer · LabSEC</p>
-            <p class="texto-secundario">
-              Trabalho no projeto RRDES, iniciativa ligada ao MEC para
-              rastreabilidade de dados e credenciais acadêmicas.
-            </p>
-            <ul class="lista-terminal lista-compacta">
-              <li>Desenvolvimento de chaincodes em Go para Hyperledger Fabric.</li>
-              <li>Integração com APIs, regras de negócio e validação de dados em XML/XSD.</li>
-              <li>Contato com OAuth2/OIDC, JWT, Docker, Nginx, CI/CD e ambientes com Kubernetes.</li>
-            </ul>
-          </article>
-
-          <article class="card-detalhe">
-            <p class="rotulo-meta">jan/2026 - atual</p>
-            <p class="titulo-card">Founder · Preparação DataDriven</p>
-            <p class="texto-secundario">
-              Plataforma data-driven criada para ajudar estudantes a diagnosticar
-              desempenho, definir metas e evoluir a preparação para vestibular.
-            </p>
-            <ul class="lista-terminal lista-compacta">
-              <li>Simulação oficial da UFSC, dashboards, relatórios e metas por curso.</li>
-              <li>Arquitetura com separação clara entre frontend, backend, domínio e dados.</li>
-              <li>Stack com React, TypeScript, NestJS, Prisma, PostgreSQL e Supabase Auth.</li>
-            </ul>
-          </article>
+      <section class="section-shell content-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Systems built for evidence, recovery, and control</h2>
+          <p>
+            Systems built around reliability, financial workflows, blockchain
+            infrastructure, and verifiable execution.
+          </p>
         </div>
-      </section>
 
-      <section id="stack" class="painel painel-largo">
-        <h2>Stack e competências</h2>
-        <div class="grade-stack">
-          <article class="card-detalhe">
-            <p class="rotulo-meta">Linguagens</p>
-            <ul class="tags-tecnologia" aria-label="Linguagens principais">
-              <li>Go</li>
-              <li>Python</li>
-              <li>TypeScript</li>
-              <li>Java</li>
+        <article class="project-card featured-project">
+          <figure class="project-media featured-media">
+            <img
+              src="assets/projects/nexus-market-observer.webp"
+              alt="Grafana dashboard for Nexus Market Observer running its deterministic replay pipeline"
+              width="1440"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Real Grafana capture · deterministic replay mode</figcaption>
+          </figure>
+
+          <div class="project-body">
+            <div class="project-topline">
+              <p class="project-label">Featured · Rust backend · Unofficial Nexus project</p>
+              <span class="status-badge">Independent project</span>
+            </div>
+            <h3>Nexus Market Observer</h3>
+            <p class="project-lead">
+              An unofficial fault-tolerant Rust service built around the official
+              Nexus Exchange SDK to ingest, validate, persist, and observe market data.
+            </p>
+
+            <div class="case-columns">
+              <div>
+                <h4>Problem</h4>
+                <p>
+                  Market data is transient and failure-prone. A useful observer must
+                  preserve financial precision and expose gaps, staleness, disconnects,
+                  and dependency failures instead of masking them.
+                </p>
+              </div>
+              <div>
+                <h4>Engineering response</h4>
+                <p>
+                  A bounded Tokio pipeline maintains a validated in-memory book,
+                  persists source-isolated history, resynchronizes after sequence gaps,
+                  and keeps API health explicit while Nexus or PostgreSQL recovers.
+                </p>
+              </div>
+            </div>
+
+            <ul class="evidence-grid">
+              <li>5 read-only REST endpoints</li>
+              <li>Decimal-safe order-book analytics</li>
+              <li>PostgreSQL source-isolated history</li>
+              <li>Deterministic replay and public Testnet-live modes</li>
+              <li>Stale, reconnecting, resyncing, and degraded states</li>
+              <li>Sequence-gap detection and REST resynchronization</li>
+              <li>Database outage recovery</li>
+              <li>41 automated tests and GitHub Actions CI</li>
+              <li>Docker Compose and Prometheus</li>
+              <li>10-panel Grafana dashboard</li>
             </ul>
-          </article>
 
-          <article class="card-detalhe">
-            <p class="rotulo-meta">Backend e dados</p>
-            <ul class="tags-tecnologia" aria-label="Tecnologias de backend e dados">
-              <li>REST APIs</li>
-              <li>Gin</li>
-              <li>NestJS</li>
-              <li>Prisma</li>
+            <ul class="tech-list" aria-label="Nexus Market Observer technology stack">
+              <li>Rust</li>
+              <li>Tokio</li>
+              <li>Axum</li>
+              <li>SQLx</li>
               <li>PostgreSQL</li>
-              <li>XML/XSD</li>
-            </ul>
-          </article>
-
-          <article class="card-detalhe">
-            <p class="rotulo-meta">Segurança e blockchain</p>
-            <ul class="tags-tecnologia" aria-label="Tecnologias de segurança e blockchain">
-              <li>Hyperledger Fabric</li>
-              <li>JWT</li>
-              <li>OAuth2/OIDC</li>
-              <li>OpenSSL</li>
-              <li>Criptografia</li>
-              <li>Chaincodes</li>
-            </ul>
-          </article>
-
-          <article class="card-detalhe">
-            <p class="rotulo-meta">Infra e produto</p>
-            <ul class="tags-tecnologia" aria-label="Ferramentas de infraestrutura e produto">
-              <li>Linux</li>
               <li>Docker</li>
-              <li>Nginx</li>
-              <li>Kubernetes</li>
-              <li>Git</li>
-              <li>React</li>
+              <li>Prometheus</li>
+              <li>Grafana</li>
+            </ul>
+
+            <div class="text-links">
+              <a
+                href="https://github.com/salmoriadev/nexus-market-observer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >View repository <span aria-hidden="true">↗</span></a>
+              <a
+                href="https://github.com/salmoriadev/nexus-market-observer/blob/main/docs/decisions.md"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Read architecture decisions <span aria-hidden="true">↗</span></a>
+              <a
+                href="https://github.com/salmoriadev/nexus-market-observer/blob/main/docs/demo-script.md"
+                target="_blank"
+                rel="noopener noreferrer"
+              >View demo guide <span aria-hidden="true">↗</span></a>
+            </div>
+
+            <p class="project-note">
+              Independent portfolio project. Not affiliated with or endorsed by Nexus.
+              It never executes trades or uses credentials. Replay data is always
+              labeled; live mode uses public Testnet data only.
+            </p>
+          </div>
+        </article>
+
+        <div class="secondary-projects">
+          <article class="project-card">
+            <figure class="project-media trustwork-media">
+              <img
+                src="assets/projects/trustwork.webp"
+                alt="TrustWork project preview describing a Base Sepolia testnet escrow and digest-only evidence"
+                width="1280"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="project-body">
+              <div class="project-topline">
+                <p class="project-label">Smart contracts · Verifiable payments</p>
+                <span class="status-badge status-caution">Early access</span>
+              </div>
+              <h3>TrustWork</h3>
+              <p class="project-lead">
+                A milestone-based USDC escrow that makes project funding, delivery
+                evidence, disputes, and settlement explicit and verifiable.
+              </p>
+              <p>
+                The Solidity state machine defines funding, release, revisions,
+                disputes, timeouts, cancellation, and pausing. A wallet-authenticated
+                FastAPI indexer reconciles confirmed events into PostgreSQL while
+                browser-side SHA-256 keeps original evidence files with the user.
+              </p>
+              <ul class="evidence-list">
+                <li>EIP-4361 wallet authentication and Base Sepolia enforcement</li>
+                <li>EVM receipt and confirmation tracking</li>
+                <li>Idempotent event indexing with confirmed-block reconciliation</li>
+                <li>Foundry unit, fuzz, and invariant tests</li>
+                <li>CodeQL, Slither, Trivy, dependency audits, and SBOM</li>
+              </ul>
+              <ul class="tech-list" aria-label="TrustWork technology stack">
+                <li>Solidity</li>
+                <li>Foundry</li>
+                <li>FastAPI</li>
+                <li>PostgreSQL</li>
+                <li>EVM</li>
+                <li>Base Sepolia</li>
+              </ul>
+              <div class="text-links">
+                <a
+                  href="https://github.com/salmoriadev/TrustWork"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >View repository <span aria-hidden="true">↗</span></a>
+                <a
+                  href="https://github.com/salmoriadev/TrustWork#architecture"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Read architecture <span aria-hidden="true">↗</span></a>
+                <a
+                  href="https://github.com/salmoriadev/TrustWork/blob/main/docs/deployment.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Deployment status <span aria-hidden="true">↗</span></a>
+              </div>
+              <p class="project-note">
+                Early access · Testnet only · Dedicated public deployment pending.
+                No real money, private-file storage, external audit, or commercial availability.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-media">
+              <img
+                src="assets/projects/financebuddy.webp"
+                alt="FinanceBuddy landing page with synthetic dashboard data"
+                width="1280"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Published application · synthetic product data</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-topline">
+                <p class="project-label">Node.js backend · Financial workflows</p>
+                <span class="status-badge">Public app</span>
+              </div>
+              <h3>FinanceBuddy</h3>
+              <p class="project-lead">
+                A modular personal-finance platform that brings cash flow, budgets,
+                goals, reports, and investments into one account.
+              </p>
+              <p>
+                A NestJS REST API separates five financial domains behind user-scoped
+                PostgreSQL data and database-aggregated reports. Authentication uses
+                short-lived access tokens, rotating HttpOnly refresh cookies, CSRF
+                enforcement, and rate limiting.
+              </p>
+              <ul class="evidence-list">
+                <li>Prisma client and explicit data ownership</li>
+                <li>Health endpoints, Jest, and Supertest</li>
+                <li>Dependency audit, Gitleaks, Semgrep, and Trivy</li>
+              </ul>
+              <ul class="tech-list" aria-label="FinanceBuddy technology stack">
+                <li>Node.js</li>
+                <li>NestJS</li>
+                <li>TypeScript</li>
+                <li>PostgreSQL</li>
+                <li>Prisma</li>
+                <li>React</li>
+              </ul>
+              <div class="text-links">
+                <a
+                  href="https://financebuddy-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Open application <span aria-hidden="true">↗</span></a>
+                <a
+                  href="https://github.com/salmoriadev/FinanceBuddy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >View technical overview <span aria-hidden="true">↗</span></a>
+              </div>
+              <p class="project-note">
+                Manual financial records only. No bank or brokerage integration,
+                trade execution, or financial advice.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Professional experience</p>
+            <h2 id="experience-title">Shipping privacy-aware blockchain infrastructure</h2>
+          </div>
+
+          <article class="experience-card">
+            <div class="experience-intro">
+              <div>
+                <p class="project-label">Nov 2025 — Present</p>
+                <h3>Software Developer</h3>
+                <p class="organization">Computer Security Laboratory — UFSC</p>
+              </div>
+              <p>
+                Building production-oriented backend and Hyperledger Fabric
+                infrastructure for RRDES, Brazil's higher-education academic-record
+                traceability network.
+              </p>
+            </div>
+
+            <div class="workstream-grid">
+              <article>
+                <p class="workstream-index">01</p>
+                <h4>Private-data lifecycle</h4>
+                <p>
+                  Designed deterministic key-level purge planning and operational
+                  tooling for Fabric Private Data Collections, reducing eligible
+                  private histories by 87.5%, observed pvtdataStore growth by 66.8%,
+                  and total peer-storage growth by 35.7% in a controlled local benchmark.
+                </p>
+              </article>
+              <article>
+                <p class="workstream-index">02</p>
+                <h4>Revoked diplomas</h4>
+                <p>
+                  Delivered an end-to-end revoked-diploma workflow across Go APIs,
+                  XML/XSD validation, web interfaces, formatters, and dedicated
+                  chaincode, blocking revoked diplomas at write time while preserving
+                  backward-compatible reads.
+                </p>
+              </article>
+              <article>
+                <p class="workstream-index">03</p>
+                <h4>Consent and private-data sharing</h4>
+                <p>
+                  Led the on-chain consent core and helped define a privacy-preserving
+                  data-sharing flow between institutions using authenticated context,
+                  Fabric events, mTLS, transient fields, destination PDCs, and
+                  revocation-driven purge.
+                </p>
+              </article>
+            </div>
+
+            <div class="text-links experience-links">
+              <a
+                href="https://www.linkedin.com/company/laborat%C3%B3rio-de-seguran%C3%A7a-em-computa%C3%A7%C3%A3o/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >LabSEC <span aria-hidden="true">↗</span></a>
+              <a
+                href="https://www.gov.br/governodigital/pt-br/estrategias-e-governanca-digital/startupgovbr/startups/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Public RRDES overview <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell content-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="skills-title">A backend stack grounded in current work</h2>
+          <p>
+            Technologies used across professional systems and projects, grouped by
+            the problems they help solve.
+          </p>
+        </div>
+
+        <div class="capability-grid">
+          <article>
+            <p class="capability-number">01 / Languages</p>
+            <ul>
+              <li>Go</li>
+              <li>Rust</li>
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>Solidity</li>
+              <li>SQL</li>
+              <li>Bash</li>
+            </ul>
+          </article>
+          <article>
+            <p class="capability-number">02 / Backend &amp; Data</p>
+            <ul>
+              <li>Node.js</li>
+              <li>NestJS</li>
+              <li>FastAPI</li>
+              <li>Axum</li>
+              <li>REST APIs</li>
+              <li>PostgreSQL</li>
+              <li>Prisma</li>
+              <li>SQLx</li>
+            </ul>
+          </article>
+          <article>
+            <p class="capability-number">03 / Blockchain &amp; Infrastructure</p>
+            <ul>
+              <li>Hyperledger Fabric</li>
+              <li>Fabric Gateway</li>
+              <li>EVM</li>
+              <li>JSON-RPC</li>
+              <li>Foundry</li>
+              <li>Docker</li>
+              <li>Docker Compose</li>
+              <li>Linux</li>
+              <li>GitHub Actions</li>
+              <li>GitLab CI/CD</li>
+              <li>Prometheus</li>
+              <li>Grafana</li>
+            </ul>
+          </article>
+          <article>
+            <p class="capability-number">04 / Security &amp; Cloud</p>
+            <ul>
+              <li>OAuth 2.0 / OIDC</li>
+              <li>JWT</li>
+              <li>RBAC</li>
+              <li>TLS / mTLS</li>
+              <li>X.509</li>
+              <li>Keycloak</li>
+              <li>AWS fundamentals</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section id="interesses" class="painel">
-        <h2>Áreas de interesse</h2>
-        <ul class="lista-terminal">
-          <li>Engenharia de software e arquitetura de sistemas</li>
-          <li>Segurança da informação e desenvolvimento seguro</li>
-          <li>Matemática aplicada e modelagem de sistemas</li>
-          <li>Blockchain, criptografia e aplicações descentralizadas</li>
-          <li>Inteligência artificial aplicada à segurança</li>
-        </ul>
+      <section class="more-work-section" aria-labelledby="more-work-title">
+        <div class="section-shell">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">More work</p>
+            <h2 id="more-work-title">Smaller systems, specific constraints</h2>
+          </div>
+
+          <div class="more-work-list">
+            <article>
+              <div>
+                <p class="project-label">Go · PKI · X.509 · PostgreSQL · REST</p>
+                <h3>IpeSign</h3>
+              </div>
+              <p>
+                Go-based document-signing core with ephemeral per-document certificates,
+                a root/issuing CA chain, PDF hash signing, append-only ledger records,
+                encrypted private-key persistence, and CLI and HTTP interfaces.
+                No embedded PDF signature or PAdES yet.
+              </p>
+              <a
+                href="https://github.com/salmoriadev/IpeSign"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Repository <span aria-hidden="true">↗</span></a>
+            </article>
+
+            <article>
+              <div>
+                <p class="project-label">Education product · Data workflows</p>
+                <h3>Preparação DataDriven</h3>
+              </div>
+              <p>
+                A data-driven preparation platform for UFSC entrance-exam students,
+                combining official score simulation, targets, reports, projections,
+                and study-planning workflows.
+              </p>
+              <a
+                href="https://www.preparacaodatadriven.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Open product <span aria-hidden="true">↗</span></a>
+            </article>
+
+            <article>
+              <div>
+                <p class="project-label">Go · Fyne · Academic modeling</p>
+                <h3>IAA Calculator</h3>
+              </div>
+              <p>
+                A cross-platform Go desktop tool for calculating UFSC's Academic
+                Performance Index, modeling target averages, and managing course data
+                through a focused Fyne interface.
+              </p>
+              <a
+                href="https://github.com/salmoriadev/IaaCalcutator"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Repository <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+
+          <a
+            class="all-repositories-link"
+            href="https://github.com/salmoriadev?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Explore all repositories <span aria-hidden="true">↗</span></a>
+        </div>
       </section>
 
-      <section id="projetos" class="painel painel-largo">
-        <h2>Projetos em destaque</h2>
-        <div class="grade-projetos">
-          <article class="card-detalhe projeto-card">
-            <p class="rotulo-meta">Produto autoral</p>
-            <p class="titulo-card">Preparação DataDriven</p>
-            <p>
-              Plataforma construída para estudantes do vestibular da UFSC, com
-              simulação oficial, análise de metas, dashboards e módulos de
-              apoio ao estudo.
-            </p>
-            <p class="texto-secundario">
-              React, TypeScript, NestJS, Prisma, PostgreSQL e Supabase Auth.
-            </p>
-            <div class="links-card">
-              <a href="https://www.preparacaodatadriven.com.br/" target="_blank" rel="noreferrer">
-                Live demo
-              </a>
+      <section class="section-shell content-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">Education &amp; credentials</p>
+          <h2 id="about-title">Formal study, security foundations, clear communication</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="education-card">
+            <p class="project-label">Education</p>
+            <h3>B.S. in Information Systems</h3>
+            <p class="organization">Universidade Federal de Santa Catarina</p>
+            <p>Mar 2025 — Expected Jul 2029</p>
+            <div class="academic-score">
+              <strong>9.21 / 10.0</strong>
+              <span>Academic Performance Index · 2025.2</span>
             </div>
+            <a
+              href="https://sin.ufsc.br/sobre-o-curso/descricao/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View the UFSC program <span aria-hidden="true">↗</span></a>
           </article>
 
-          <article class="card-detalhe projeto-card">
-            <p class="rotulo-meta">Produto full stack</p>
-            <p class="titulo-card">Finance Buddy</p>
-            <p>
-              Gerenciador financeiro com foco em segurança, confiabilidade e
-              arquitetura modular para transações, metas, orçamento e
-              investimentos.
-            </p>
-            <p class="texto-secundario">
-              React, TypeScript, NestJS, Prisma, PostgreSQL e autenticação com JWT.
-            </p>
-            <div class="links-card">
-              <a href="https://financebuddy-five.vercel.app/" target="_blank" rel="noreferrer">
-                Live demo
-              </a>
-            </div>
+          <article class="credentials-card">
+            <p class="project-label">Selected credentials</p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.credly.com/badges/a2170c8c-d439-4a04-8eae-6ec5c594f957/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>AWS Knowledge: Security Champion</strong>
+                  <span>AWS Skill Builder digital badge</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/specialization/MN8ZIRD8OID3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>Google Cybersecurity Professional Certificate</strong>
+                  <span>Google · Coursera</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.credly.com/badges/96c1ff64-8754-4b1f-9903-ebae95d90f21/linked_in_profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>IBM SOC in Practice</strong>
+                  <span>IBM digital credential</span>
+                </a>
+              </li>
+            </ul>
+            <a
+              class="inline-link"
+              href="https://www.linkedin.com/in/arthursalmoria/details/certifications/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View all credentials on LinkedIn <span aria-hidden="true">↗</span></a>
           </article>
 
-          <article class="card-detalhe projeto-card">
-            <p class="rotulo-meta">Open source</p>
-            <p class="titulo-card">Digital Certification in Java</p>
-            <p>
-              Implementação de conceitos de certificação digital, programação
-              orientada a objetos e fundamentos de segurança usando Java.
-            </p>
-            <p class="texto-secundario">Java, criptografia e orientação a objetos.</p>
-            <div class="links-card">
-              <a href="https://github.com/salmoriadev/Processo_seletivo_LabSEC/tree/main/Desafio_Final/hiring-0.2.3" target="_blank" rel="noreferrer">
-                Ver projeto
-              </a>
-            </div>
-          </article>
-
-          <article class="card-detalhe projeto-card">
-            <p class="rotulo-meta">Open source</p>
-            <p class="titulo-card">Digital Certification in Go</p>
-            <p>
-              Implementação de conceitos de criptografia e padrões de projeto
-              em Go, conectando teoria de segurança com prática de código.
-            </p>
-            <p class="texto-secundario">Go, criptografia e design patterns.</p>
-            <div class="links-card">
-              <a href="https://github.com/salmoriadev/aprendendo_go/tree/main/cripto" target="_blank" rel="noreferrer">
-                Ver projeto
-              </a>
-            </div>
-          </article>
-
-          <article class="card-detalhe projeto-card">
-            <p class="rotulo-meta">Projeto acadêmico</p>
-            <p class="titulo-card">Sistema CaFerri</p>
-            <p>
-              Sistema em Python com organização em MVC para gestão de e-commerce,
-              persistência de dados e regras de negócio consistentes.
-            </p>
-            <p class="texto-secundario">Python, POO, MVC e persistência local.</p>
-            <div class="links-card">
-              <a href="https://github.com/salmoriadev/Sistema_CaFerri" target="_blank" rel="noreferrer">
-                Ver projeto
-              </a>
-            </div>
-          </article>
-
-          <article class="card-detalhe projeto-card">
-            <p class="rotulo-meta">Mais repositórios</p>
-            <p class="titulo-card">GitHub · salmoriadev</p>
-            <p>
-              Perfil com outros experimentos, estudos, implementações acadêmicas
-              e projetos públicos em evolução.
-            </p>
-            <p class="texto-secundario">Go, Java, Python, TypeScript e mais.</p>
-            <div class="links-card">
-              <a href="https://github.com/salmoriadev" target="_blank" rel="noreferrer">
-                Abrir GitHub
-              </a>
-            </div>
+          <article class="languages-card">
+            <p class="project-label">Languages</p>
+            <dl>
+              <div>
+                <dt>Portuguese</dt>
+                <dd>Native</dd>
+              </div>
+              <div>
+                <dt>English</dt>
+                <dd>Fluent</dd>
+              </div>
+              <div>
+                <dt>Spanish</dt>
+                <dd>Intermediate</dd>
+              </div>
+            </dl>
           </article>
         </div>
       </section>
 
-      <section id="certificacoes" class="painel painel-largo">
-        <h2>Certificações</h2>
-        <div class="grade-certificacoes">
-          <article class="card-detalhe">
-            <p class="rotulo-meta">Segurança</p>
-            <p class="titulo-card">Base forte em cybersecurity</p>
-            <p class="texto-secundario">
-              Formação complementar com foco em redes, ameaças, defesa,
-              automação, Linux e operações de segurança.
-            </p>
-            <ul class="lista-terminal lista-compacta">
-              <li>Google Cybersecurity Professional Certificate · Google · ago/2025</li>
-              <li>Security Operations Center in Practice · IBM · mai/2025</li>
-              <li>Cybersecurity Fundamentals · IBM · mai/2025</li>
-              <li>Information Security · Fundação Bradesco · jul/2025</li>
-            </ul>
-          </article>
-
-          <article class="card-detalhe">
-            <p class="rotulo-meta">IA e prompting</p>
-            <p class="titulo-card">Uso prático de IA</p>
-            <p class="texto-secundario">
-              Cursos voltados a fundamentos de IA, prompting e aplicação
-              prática em fluxos de estudo, negócio e produtividade.
-            </p>
-            <ul class="lista-terminal lista-compacta">
-              <li>Google AI Essentials · Google · jul/2025</li>
-              <li>Introduction to Prompt Engineering · DIO · jun/2025</li>
-              <li>Artificial Intelligence for Small and Medium-Sized Businesses · Fundação Bradesco · mai/2025</li>
-              <li>Demystifying the Pillars of Artificial Intelligence (AI) · DIO · abr/2025</li>
-            </ul>
-          </article>
-
-          <article class="card-detalhe">
-            <p class="rotulo-meta">Backend e qualidade</p>
-            <p class="titulo-card">Java, Python e testes</p>
-            <p class="texto-secundario">
-              Trilha orientada a backend com Java e Python, incluindo TDD,
-              FastAPI, bancos de dados e boas práticas de desenvolvimento.
-            </p>
-            <ul class="lista-terminal lista-compacta">
-              <li>Santander 2025 - Back-End with Java · DIO · ago/2025</li>
-              <li>Test-Driven Development with Java · DIO · ago/2025</li>
-              <li>Vivo - Python AI Backend Developer · DIO · abr/2025</li>
-              <li>SQL and NoSQL Databases for Backend Development · DIO · abr/2025</li>
-            </ul>
-          </article>
-
-          <article class="card-detalhe">
-            <p class="rotulo-meta">Dados e cloud</p>
-            <p class="titulo-card">Formação complementar</p>
-            <p class="texto-secundario">
-              Cursos de apoio para ampliar repertório em ciência de dados,
-              infraestrutura e computação em nuvem.
-            </p>
-            <ul class="lista-terminal lista-compacta">
-              <li>Introduction to Data Science · IE University · mai/2025</li>
-              <li>Cloud Computing · CIEE · mai/2025</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="formacao" class="painel painel-largo">
-        <h2>Formação e idiomas</h2>
-        <div class="grade-formacao">
-          <article class="mini-painel">
-            <p class="rotulo-meta">Formação</p>
-            <p class="titulo-card">UFSC · Sistemas de Informação</p>
-            <p>Bacharelado com previsão de conclusão em 2029.</p>
-          </article>
-
-          <article class="mini-painel">
-            <p class="rotulo-meta">Idiomas</p>
-            <p class="titulo-card">Português e inglês</p>
-            <p>Português nativo e inglês em nível avançado.</p>
-          </article>
-
-          <article class="mini-painel">
-            <p class="rotulo-meta">Comunidade</p>
-            <p class="titulo-card">Voluntariado na UFSC</p>
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-shell contact-shell">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let's build reliable systems.</h2>
             <p>
-              Participação voluntária na feira dos cursos e computação,
-              conversando com vestibulandos e apresentando o curso.
+              I'm interested in backend, blockchain infrastructure, distributed
+              systems, and financial-software opportunities.
             </p>
-          </article>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:salmoria.dev@gmail.com">Email me</a>
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/arthursalmoria/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >LinkedIn <span aria-hidden="true">↗</span></a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/salmoriadev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub <span aria-hidden="true">↗</span></a>
+            <a
+              class="button button-secondary"
+              href="assets/Arthur_Salmoria_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Arthur_Salmoria_Resume.pdf"
+            >Download resume</a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="rodape">
-      <section class="rodape-conteudo">
-        <p class="rodape-titulo">contato</p>
-        <address class="rodape-contatos">
-          <a href="mailto:salmoria.dev@gmail.com">salmoria.dev@gmail.com</a>
-          <a href="https://www.linkedin.com/in/arthursalmoria/" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-          <a href="https://github.com/salmoriadev" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-          <span>Florianópolis, SC</span>
-        </address>
-      </section>
+    <footer class="site-footer">
+      <div class="section-shell footer-shell">
+        <p>Arthur Salmoria · Backend &amp; Blockchain Developer</p>
+        <p>Built with semantic HTML and CSS · 2026</p>
+      </div>
     </footer>
   </body>
 </html>
