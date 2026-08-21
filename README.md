@@ -16,10 +16,18 @@ distributed systems, financial workflows, and security.
 - [FinanceBuddy](https://github.com/salmoriadev/FinanceBuddy) — modular Node.js and
   NestJS backend for manually managed personal-finance workflows.
 
+Additional project cards cover [IpeSign](https://github.com/salmoriadev/IpeSign),
+[Preparação DataDriven](https://www.preparacaodatadriven.com.br/), and the
+[IAA Calculator](https://github.com/salmoriadev/IaaCalcutator). Each displayed project
+includes a real product capture or a repository-based architecture visual that is
+explicitly labeled when it is not a product screenshot.
+
 ## Technology
 
 The site remains intentionally small: semantic HTML5, modern CSS, optimized WebP
-assets, and no client-side framework or runtime data dependency.
+assets, lightweight SVG diagrams, and no client-side framework or runtime data
+dependency. The visual system uses warm paper tones, deep blue, and a restrained clay
+accent with system sans-serif typography and monospace reserved for technical tags.
 
 ## Local development
 
@@ -45,7 +53,7 @@ Lighthouse results measured from the local static server on 2026-08-21:
 
 | Profile | Performance | Accessibility | Best Practices | SEO |
 | --- | ---: | ---: | ---: | ---: |
-| Mobile | 100 | 100 | 100 | 100 |
+| Mobile | 99 | 100 | 100 | 100 |
 | Desktop | 100 | 100 | 100 | 100 |
 
 Scores are measurements, not guarantees; browser, network, and hosting conditions can

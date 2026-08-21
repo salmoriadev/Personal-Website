@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">IAA Calculator functional map</title>
+  <desc id="desc">An editorial diagram of the IAA Calculator showing academic credits and grades flowing through a Go calculation model to updated IAA and target-average results.</desc>
+  <rect width="1280" height="720" fill="#ece8df"/>
+  <g stroke="#d8d1c4" stroke-width="1" opacity=".75">
+    <path d="M0 72h1280M0 144h1280M0 216h1280M0 288h1280M0 360h1280M0 432h1280M0 504h1280M0 576h1280M0 648h1280"/>
+    <path d="M80 0v720M160 0v720M240 0v720M320 0v720M400 0v720M480 0v720M560 0v720M640 0v720M720 0v720M800 0v720M880 0v720M960 0v720M1040 0v720M1120 0v720M1200 0v720"/>
+  </g>
+  <rect x="38" y="36" width="1204" height="648" rx="22" fill="#faf8f3" stroke="#c8c1b5" stroke-width="2"/>
+  <g font-family="Arial, sans-serif">
+    <text x="78" y="91" fill="#9a4e32" font-size="14" font-weight="700" letter-spacing="3">DESKTOP APPLICATION · GO + FYNE</text>
+    <text x="78" y="160" fill="#172b38" font-size="52" font-weight="700">IAA Calculator</text>
+    <text x="78" y="196" fill="#5c6a70" font-size="20">UFSC academic-performance modeling with explicit inputs and targets.</text>
+
+    <rect x="78" y="264" width="292" height="242" rx="12" fill="#ffffff" stroke="#d1cbc0"/>
+    <text x="104" y="303" fill="#9a4e32" font-size="13" font-weight="700" letter-spacing="2">INPUTS</text>
+    <text x="104" y="356" fill="#172b38" font-size="25" font-weight="700">Current record</text>
+    <text x="104" y="396" fill="#5c6a70" font-size="17">Current IAA</text>
+    <text x="104" y="430" fill="#5c6a70" font-size="17">Completed credits</text>
+    <text x="104" y="464" fill="#5c6a70" font-size="17">Course grades + credits</text>
+
+    <path d="M391 385h70" stroke="#173b52" stroke-width="3"/>
+    <path d="m451 376 14 9-14 9" fill="none" stroke="#173b52" stroke-width="3"/>
+
+    <rect x="481" y="238" width="318" height="294" rx="12" fill="#173b52"/>
+    <text x="509" y="279" fill="#d9a15f" font-size="13" font-weight="700" letter-spacing="2">CALCULATION MODEL</text>
+    <text x="509" y="334" fill="#fffdf7" font-size="24" font-weight="700">Weighted academic index</text>
+    <rect x="509" y="373" width="262" height="66" rx="8" fill="#244c62"/>
+    <text x="534" y="414" fill="#f7f4ec" font-family="monospace" font-size="17">Σ(grade × credits)</text>
+    <text x="509" y="480" fill="#c3d1d8" font-size="16">Validation and course management</text>
+
+    <path d="M819 385h70" stroke="#173b52" stroke-width="3"/>
+    <path d="m879 376 14 9-14 9" fill="none" stroke="#173b52" stroke-width="3"/>
+
+    <rect x="909" y="264" width="293" height="242" rx="12" fill="#ffffff" stroke="#d1cbc0"/>
+    <text x="935" y="303" fill="#9a4e32" font-size="13" font-weight="700" letter-spacing="2">OUTPUTS</text>
+    <text x="935" y="356" fill="#172b38" font-size="25" font-weight="700">Planning answers</text>
+    <text x="935" y="396" fill="#5c6a70" font-size="17">Updated IAA</text>
+    <text x="935" y="430" fill="#5c6a70" font-size="17">Required target average</text>
+    <text x="935" y="464" fill="#5c6a70" font-size="17">Editable course set</text>
+
+    <text x="78" y="621" fill="#5c6a70" font-size="17">Cross-platform desktop tool · source and build instructions available in the repository</text>
+  </g>
+</svg>
