@@ -25,9 +25,10 @@ explicitly labeled when it is not a product screenshot.
 ## Technology
 
 The site remains intentionally small: semantic HTML5, modern CSS, optimized WebP
-assets, lightweight SVG diagrams, and no client-side framework or runtime data
-dependency. The visual system uses warm paper tones, deep blue, and a restrained clay
-accent with system sans-serif typography and monospace reserved for technical tags.
+assets, lightweight SVG diagrams, and a small vanilla JavaScript enhancement for the
+mobile navigation. There is no client-side framework or runtime data dependency. The
+visual system uses warm paper tones, deep blue, and a restrained clay accent with
+system sans-serif typography and monospace reserved for technical tags.
 
 ## Local development
 
@@ -47,9 +48,9 @@ Then open `http://localhost:8000/`.
 - Responsive layouts tested from 360 px through 1440 px
 - Reduced-motion support and useful alternative text
 - Width and height attributes on images to reduce layout shift
-- No JavaScript bundle, icon font, analytics, or runtime API request
+- No framework, icon font, analytics, or runtime API request
 
-Lighthouse results measured from the local static server on 2026-08-21:
+Lighthouse results measured from the production deployment on 2026-08-22:
 
 | Profile | Performance | Accessibility | Best Practices | SEO |
 | --- | ---: | ---: | ---: | ---: |
