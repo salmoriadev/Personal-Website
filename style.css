@@ -163,12 +163,6 @@ summary:focus-visible {
   background: var(--navy-soft);
 }
 
-.desktop-nav .nav-resume {
-  margin-left: 6px;
-  color: var(--navy-deep);
-  border: 1px solid var(--line-strong);
-}
-
 .mobile-nav {
   display: none;
 }
