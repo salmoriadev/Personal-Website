@@ -1108,6 +1108,262 @@ summary:focus-visible {
   color: var(--muted);
 }
 
+/* Retained academic route: scoped so its layout cannot affect the portfolio. */
+body.tema-terminal {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.tema-terminal .curriculo {
+  position: relative;
+  z-index: 1;
+  width: min(1080px, calc(100% - 40px));
+  margin: 32px auto;
+}
+
+.tema-terminal .pagina-dicionario {
+  display: grid;
+  grid-template-columns: minmax(230px, 290px) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.tema-terminal .pagina-dicionario > .topo,
+.tema-terminal .pagina-dicionario > .navegacao-paginas {
+  grid-column: 1 / -1;
+}
+
+.tema-terminal .pagina-dicionario > section {
+  grid-column: 2;
+}
+
+.tema-terminal .topo,
+.tema-terminal .barra-lateral,
+.tema-terminal .pagina-dicionario > section {
+  padding: clamp(22px, 4vw, 34px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.tema-terminal .topo h1 {
+  color: var(--ink-strong);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+
+.tema-terminal .topo > p,
+.tema-terminal .pagina-dicionario > section > p,
+.tema-terminal .barra-lateral p,
+.tema-terminal .barra-lateral li,
+.tema-terminal .dicionario-lista dd {
+  color: var(--muted);
+}
+
+.tema-terminal .topo > p {
+  max-width: 720px;
+  margin-top: 14px;
+}
+
+.tema-terminal .navegacao-interna {
+  margin-top: 22px;
+}
+
+.tema-terminal .navegacao ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  list-style: none;
+}
+
+.tema-terminal .navegacao a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 9px 13px;
+  color: var(--navy-deep);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 7px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 150ms ease, border-color 150ms ease,
+    transform 150ms ease;
+}
+
+.tema-terminal .navegacao a:hover {
+  background: var(--navy-soft);
+  border-color: var(--navy);
+  transform: translateY(-1px);
+}
+
+.tema-terminal .barra-lateral {
+  position: sticky;
+  top: 88px;
+  grid-column: 1;
+  grid-row: span 2;
+}
+
+.tema-terminal h2 {
+  margin-bottom: 14px;
+  color: var(--ink-strong);
+  font-size: 1.35rem;
+  letter-spacing: -0.025em;
+}
+
+.tema-terminal .foto-perfil {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.tema-terminal .barra-lateral p + p,
+.tema-terminal .barra-lateral p + ul,
+.tema-terminal .barra-lateral ul + p {
+  margin-top: 12px;
+}
+
+.tema-terminal .barra-lateral ul {
+  display: grid;
+  gap: 5px;
+  padding-left: 18px;
+}
+
+.tema-terminal .dicionario-lista {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  margin-top: 8px;
+}
+
+.tema-terminal .dicionario-lista dt,
+.tema-terminal .dicionario-lista dd {
+  padding-block: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tema-terminal .dicionario-lista dt {
+  color: var(--clay);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.tema-terminal .dicionario-lista dd {
+  padding-left: 18px;
+  font-size: 0.9rem;
+}
+
+.tema-terminal .rodape {
+  margin-top: auto;
+  color: #ffffff;
+  background: var(--navy-deep);
+}
+
+.tema-terminal .rodape-conteudo {
+  display: flex;
+  width: min(1080px, calc(100% - 40px));
+  min-height: 88px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-inline: auto;
+}
+
+.tema-terminal .rodape-titulo {
+  color: #d9a15f;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.tema-terminal .rodape-contatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  justify-content: flex-end;
+  font-style: normal;
+}
+
+.tema-terminal .rodape-contatos a,
+.tema-terminal .rodape-contatos span {
+  color: #edf3f5;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 900px) {
+  .tema-terminal .pagina-dicionario {
+    grid-template-columns: 1fr;
+  }
+
+  .tema-terminal .pagina-dicionario > .topo,
+  .tema-terminal .pagina-dicionario > .navegacao-paginas,
+  .tema-terminal .pagina-dicionario > section,
+  .tema-terminal .barra-lateral {
+    grid-column: 1;
+  }
+
+  .tema-terminal .barra-lateral {
+    position: static;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .tema-terminal .curriculo,
+  .tema-terminal .rodape-conteudo {
+    width: min(100% - 28px, 520px);
+  }
+
+  .tema-terminal .curriculo {
+    margin-block: 18px;
+  }
+
+  .tema-terminal .navegacao li,
+  .tema-terminal .navegacao a {
+    width: 100%;
+  }
+
+  .tema-terminal .navegacao a {
+    justify-content: center;
+  }
+
+  .tema-terminal .dicionario-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .tema-terminal .dicionario-lista dt {
+    padding-bottom: 4px;
+    border-bottom: 0;
+  }
+
+  .tema-terminal .dicionario-lista dd {
+    padding-top: 4px;
+    padding-left: 0;
+  }
+
+  .tema-terminal .rodape-conteudo {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 18px;
+  }
+
+  .tema-terminal .rodape-contatos {
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 1050px) {
   .hero-grid {
     grid-template-columns: minmax(0, 1fr) 300px;
