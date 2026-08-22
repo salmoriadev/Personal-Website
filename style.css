@@ -132,23 +132,11 @@ summary:focus-visible {
 }
 
 .site-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  color: var(--ink-strong);
+  font-size: 1rem;
   font-weight: 750;
+  letter-spacing: -0.015em;
   text-decoration: none;
-}
-
-.brand-mark {
-  display: inline-grid;
-  width: 34px;
-  height: 34px;
-  place-items: center;
-  color: #ffffff;
-  background: var(--navy-deep);
-  border-radius: 6px;
-  font-size: 0.74rem;
-  font-weight: 800;
 }
 
 .desktop-nav {
@@ -204,7 +192,7 @@ summary:focus-visible {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 330px;
+  grid-template-columns: minmax(0, 1fr) 240px;
   gap: clamp(48px, 7vw, 96px);
   align-items: center;
   padding-block: clamp(70px, 8vw, 104px);
@@ -337,69 +325,45 @@ summary:focus-visible {
   content: "/";
 }
 
-.profile-summary {
-  display: grid;
-  grid-template-columns: 112px minmax(0, 1fr);
-  gap: 18px;
-  padding: 22px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+.profile-portrait {
+  width: min(100%, 240px);
+  justify-self: end;
 }
 
-.profile-photo {
-  width: 112px;
-  height: 112px;
+.profile-portrait img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 9px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
 }
 
-.profile-summary > div {
-  align-self: center;
+.profile-portrait figcaption {
+  margin-top: 15px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line-strong);
 }
 
-.profile-name {
+.portrait-role {
   color: var(--ink-strong);
-  font-size: 1.05rem;
-  font-weight: 760;
+  font-size: 0.86rem;
+  font-weight: 740;
 }
 
-.profile-summary > div > p:last-child {
-  margin-top: 4px;
+.portrait-meta {
+  margin-top: 2px;
   color: var(--muted);
-  font-size: 0.84rem;
-  line-height: 1.45;
+  font-size: 0.78rem;
 }
 
-.profile-summary dl {
-  grid-column: 1 / -1;
-  border-top: 1px solid var(--line);
-}
-
-.profile-summary dl div {
-  padding-block: 13px;
-  border-bottom: 1px solid var(--line);
-}
-
-.profile-summary dl div:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.profile-summary dt {
-  color: var(--muted-soft);
-  font-size: 0.7rem;
-  font-weight: 760;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.profile-summary dd {
-  margin-top: 3px;
-  color: var(--ink);
-  font-size: 0.83rem;
-  font-weight: 560;
+.profile-portrait a {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--navy-deep);
+  font-size: 0.78rem;
+  font-weight: 680;
+  overflow-wrap: anywhere;
 }
 
 .impact-section {
@@ -1419,7 +1383,7 @@ body.tema-terminal {
 
 @media (max-width: 1050px) {
   .hero-grid {
-    grid-template-columns: minmax(0, 1fr) 300px;
+    grid-template-columns: minmax(0, 1fr) 220px;
     gap: 42px;
   }
 
@@ -1495,8 +1459,21 @@ body.tema-terminal {
     padding-block: 64px;
   }
 
-  .profile-summary {
-    max-width: 500px;
+  .profile-portrait {
+    display: grid;
+    width: min(100%, 430px);
+    grid-template-columns: 128px minmax(0, 1fr);
+    gap: 22px;
+    align-items: center;
+    justify-self: start;
+  }
+
+  .profile-portrait figcaption {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 20px;
+    border-top: 0;
+    border-left: 1px solid var(--line-strong);
   }
 
   .impact-layout {
@@ -1598,14 +1575,13 @@ body.tema-terminal {
     width: 100%;
   }
 
-  .profile-summary {
-    grid-template-columns: 88px minmax(0, 1fr);
-    padding: 18px;
+  .profile-portrait {
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 16px;
   }
 
-  .profile-photo {
-    width: 88px;
-    height: 88px;
+  .profile-portrait figcaption {
+    padding-left: 16px;
   }
 
   .impact-grid article {
