@@ -341,18 +341,55 @@ summary:focus-visible {
   line-height: 1.17;
 }
 
-.impact-grid {
+.impact-groups {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.impact-grid article {
+.impact-group {
   min-width: 0;
-  padding-inline: 22px;
+  padding-inline: 26px;
   border-left: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.impact-grid strong {
+.impact-source {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  align-items: baseline;
+  min-height: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.impact-source strong {
+  color: #f0b36a;
+  font-weight: 760;
+}
+
+.impact-source span {
+  color: #aabac3;
+}
+
+.impact-values {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.impact-values article {
+  min-width: 0;
+}
+
+.impact-values article + article {
+  margin-left: 22px;
+  padding-left: 22px;
+  border-left: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.impact-values strong {
   display: block;
   color: #ffffff;
   font-size: clamp(1.95rem, 3vw, 2.8rem);
@@ -361,7 +398,7 @@ summary:focus-visible {
   line-height: 1;
 }
 
-.impact-grid p {
+.impact-values p {
   max-width: 180px;
   margin-top: 9px;
   color: #c7d2d8;
@@ -369,10 +406,11 @@ summary:focus-visible {
   line-height: 1.45;
 }
 
-.benchmark-note {
-  grid-column: 2;
+.impact-context {
+  margin-top: 18px;
   color: #aabac3;
-  font-size: 0.76rem;
+  font-size: 0.69rem;
+  line-height: 1.45;
 }
 
 .content-section,
@@ -1427,18 +1465,18 @@ body.tema-terminal {
     grid-template-columns: 1fr;
   }
 
-  .impact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .impact-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-group {
+    padding: 24px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.18);
+    border-left: 0;
   }
 
-  .impact-grid article {
-    padding: 22px 18px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-  }
-
-  .benchmark-note {
-    grid-column: 1;
+  .impact-group:last-child {
+    padding-bottom: 0;
   }
 
   .project-grid,
@@ -1523,12 +1561,9 @@ body.tema-terminal {
     width: 100%;
   }
 
-  .impact-grid article {
-    padding-inline: 12px;
-  }
-
-  .impact-grid article:nth-child(odd) {
-    border-left: 0;
+  .impact-values article + article {
+    margin-left: 14px;
+    padding-left: 14px;
   }
 
   .section-heading h2,
