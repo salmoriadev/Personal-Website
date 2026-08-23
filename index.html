@@ -48,12 +48,12 @@
           Arthur Salmoria
         </a>
         <nav class="desktop-nav" aria-label="Primary navigation">
-          <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">Background</a><a href="#skills">Capabilities</a><a href="#contact">Contact</a>
+          <a href="#work">Projects</a><a href="#experience">Experience</a><a href="#about">Background</a><a href="#skills">Capabilities</a><a href="#contact">Contact</a>
         </nav>
         <details class="mobile-nav">
           <summary>Menu</summary>
           <nav aria-label="Mobile navigation">
-            <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">Background</a><a href="#skills">Capabilities</a><a href="#contact">Contact</a>
+            <a href="#work">Projects</a><a href="#experience">Experience</a><a href="#about">Background</a><a href="#skills">Capabilities</a><a href="#contact">Contact</a>
           </nav>
         </details>
       </div>
@@ -68,7 +68,7 @@
             <p class="hero-lead">I build reliable backend and blockchain infrastructure with security-first engineering practices.</p>
             <p class="hero-summary">Software Developer at LabSEC working on backend services and Hyperledger Fabric infrastructure for Brazil's higher-education traceability network. I also build Rust, EVM, and Node.js systems around reliability, financial workflows, and verifiable execution.</p>
             <div class="button-row" role="group" aria-label="Primary links">
-              <a class="button button-primary" href="#work">View selected work</a>
+              <a class="button button-primary" href="#work">View projects</a>
               <a class="text-action" href="https://github.com/salmoriadev" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
               <a class="text-action" href="https://www.linkedin.com/in/arthursalmoria/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
             </div>
@@ -93,7 +93,7 @@
       <section class="content-section" id="work" aria-labelledby="work-title">
         <div class="section-shell">
           <header class="section-heading">
-            <p class="overline">Selected work</p>
+            <p class="overline">Projects</p>
             <h2 id="work-title">Backend systems with observable failure modes.</h2>
             <p>Projects where financial rules, chain state, recovery, and data ownership are part of the architecture—not an afterthought.</p>
           </header>
@@ -164,6 +164,26 @@
               </div>
             </article>
           </div>
+
+          <div class="project-tier-heading">
+            <div><p class="overline">Additional systems</p><h3>Security, PKI, and applied cryptography.</h3></div>
+            <p>Focused implementations with narrower scope, public source, and explicit technical constraints.</p>
+          </div>
+          <div class="more-project-grid">
+            <article class="small-project-card">
+              <figure class="small-project-media small-project-media-dark"><img src="assets/projects/aegisir.webp" alt="AegisIR investigation workspace showing a synthetic SSH compromise case, supported claims, evidence metrics, and MITRE ATT&amp;CK navigation" width="1440" height="810" loading="lazy" decoding="async" /><figcaption>Real capture of the working prototype · synthetic example case</figcaption></figure>
+              <div class="small-project-content"><p class="project-kicker">Security backend · Incident investigation</p><h3>AegisIR</h3><p>A SOC and Blue Team workbench that turns Linux authentication and Google Cloud IAM telemetry into chronological evidence, testable claims, MITRE ATT&amp;CK candidates, and human-approved containment simulations.</p><p class="constraint">Working prototype with synthetic data. No real cloud, host, SIEM, or EDR connector.</p><a class="inline-link" href="https://github.com/salmoriadev/aegisir" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="small-project-card">
+              <figure class="small-project-media"><img src="assets/projects/ipesign-architecture.svg" alt="Architecture diagram of IpeSign's implemented PDF hashing, X.509 certificate, signing, and ledger flow" width="1280" height="720" loading="lazy" decoding="async" /><figcaption>Repository-based implementation map · not a product UI</figcaption></figure>
+              <div class="small-project-content"><p class="project-kicker">Go · PKI · X.509 · PostgreSQL · REST</p><h3>IpeSign</h3><p>A document-signing core with ephemeral per-document certificates, a root/issuing CA chain, PDF hash signing, encrypted private-key persistence, append-only records, and CLI and HTTP interfaces.</p><p class="constraint">Current limit: no embedded PDF signature or PAdES yet.</p><a class="inline-link" href="https://github.com/salmoriadev/IpeSign" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="small-project-card">
+              <figure class="small-project-media"><img src="assets/projects/go-digital-signature.svg" alt="Implementation diagram for the Go digital-signature flow from RSA keys and X.509 certificates through SHA-256 document signing and public-key verification" width="1280" height="720" loading="lazy" decoding="async" /><figcaption>Repository-based implementation map · not a product UI</figcaption></figure>
+              <div class="small-project-content"><p class="project-kicker">Go · RSA · X.509 · SHA-256</p><h3>Digital Signature in Go</h3><p>An end-to-end cryptography study that generates RSA key pairs, creates a root CA and user certificate, hashes a PDF, signs its digest with PKCS#1 v1.5, and verifies the signature with the public key.</p><p class="constraint">Educational implementation with generated keys, certificates, PDF, digest, and signature stored on disk.</p><a class="inline-link" href="https://github.com/salmoriadev/aprendendo_go/tree/main/cripto" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a></div>
+            </article>
+          </div>
+          <a class="all-repositories" href="https://github.com/salmoriadev?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all repositories <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
@@ -182,27 +202,6 @@
             </div>
             <div class="text-links"><a href="https://www.linkedin.com/company/labsec-ufsc" target="_blank" rel="noopener noreferrer">LabSEC <span aria-hidden="true">↗</span></a><a href="https://www.gov.br/governodigital/pt-br/estrategias-e-governanca-digital/startupgovbr/old_2025_startups" target="_blank" rel="noopener noreferrer">Public RRDES overview <span aria-hidden="true">↗</span></a></div>
           </article>
-        </div>
-      </section>
-
-      <section class="more-work-section" aria-labelledby="more-work-title">
-        <div class="section-shell">
-          <header class="section-heading"><p class="overline">More work</p><h2 id="more-work-title">Smaller systems, specific constraints.</h2></header>
-          <div class="more-project-grid">
-            <article class="small-project-card">
-              <figure class="small-project-media small-project-media-dark"><img src="assets/projects/aegisir.webp" alt="AegisIR investigation workspace showing a synthetic SSH compromise case, supported claims, evidence metrics, and MITRE ATT&amp;CK navigation" width="1440" height="810" loading="lazy" decoding="async" /><figcaption>Real capture of the working prototype · synthetic example case</figcaption></figure>
-              <div class="small-project-content"><p class="project-kicker">Security backend · Incident investigation</p><h3>AegisIR</h3><p>A SOC and Blue Team workbench that turns Linux authentication and Google Cloud IAM telemetry into chronological evidence, testable claims, MITRE ATT&amp;CK candidates, and human-approved containment simulations.</p><p class="constraint">Working prototype with synthetic data. No real cloud, host, SIEM, or EDR connector.</p><a class="inline-link" href="https://github.com/salmoriadev/aegisir" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
-            </article>
-            <article class="small-project-card">
-              <figure class="small-project-media"><img src="assets/projects/ipesign-architecture.svg" alt="Architecture diagram of IpeSign's implemented PDF hashing, X.509 certificate, signing, and ledger flow" width="1280" height="720" loading="lazy" decoding="async" /><figcaption>Repository-based implementation map · not a product UI</figcaption></figure>
-              <div class="small-project-content"><p class="project-kicker">Go · PKI · X.509 · PostgreSQL · REST</p><h3>IpeSign</h3><p>A document-signing core with ephemeral per-document certificates, a root/issuing CA chain, PDF hash signing, encrypted private-key persistence, append-only records, and CLI and HTTP interfaces.</p><p class="constraint">Current limit: no embedded PDF signature or PAdES yet.</p><a class="inline-link" href="https://github.com/salmoriadev/IpeSign" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
-            </article>
-            <article class="small-project-card">
-              <figure class="small-project-media"><img src="assets/projects/go-digital-signature.svg" alt="Implementation diagram for the Go digital-signature flow from RSA keys and X.509 certificates through SHA-256 document signing and public-key verification" width="1280" height="720" loading="lazy" decoding="async" /><figcaption>Repository-based implementation map · not a product UI</figcaption></figure>
-              <div class="small-project-content"><p class="project-kicker">Go · RSA · X.509 · SHA-256</p><h3>Digital Signature in Go</h3><p>An end-to-end cryptography study that generates RSA key pairs, creates a root CA and user certificate, hashes a PDF, signs its digest with PKCS#1 v1.5, and verifies the signature with the public key.</p><p class="constraint">Educational implementation with generated keys, certificates, PDF, digest, and signature stored on disk.</p><a class="inline-link" href="https://github.com/salmoriadev/aprendendo_go/tree/main/cripto" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a></div>
-            </article>
-          </div>
-          <a class="all-repositories" href="https://github.com/salmoriadev?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all repositories <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
