@@ -186,18 +186,16 @@ summary:focus-visible {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 240px;
-  gap: clamp(48px, 7vw, 96px);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
   padding-block: clamp(70px, 8vw, 104px);
 }
 
 .hero-copy {
-  max-width: 760px;
+  max-width: 920px;
 }
 
 .hero h1 {
-  max-width: 760px;
+  max-width: 900px;
   margin-top: 16px;
   color: var(--ink-strong);
   font-size: clamp(3rem, 6vw, 4.6rem);
@@ -207,7 +205,7 @@ summary:focus-visible {
 }
 
 .hero-lead {
-  max-width: 720px;
+  max-width: 800px;
   margin-top: 26px;
   color: var(--ink);
   font-size: clamp(1.2rem, 2vw, 1.52rem);
@@ -216,7 +214,7 @@ summary:focus-visible {
 }
 
 .hero-summary {
-  max-width: 700px;
+  max-width: 780px;
   margin-top: 18px;
   color: var(--muted);
   font-size: 1.02rem;
@@ -317,47 +315,6 @@ summary:focus-visible {
   right: -11px;
   color: var(--line-strong);
   content: "/";
-}
-
-.profile-portrait {
-  width: min(100%, 240px);
-  justify-self: end;
-}
-
-.profile-portrait img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border: 1px solid var(--line-strong);
-  border-radius: 4px;
-}
-
-.profile-portrait figcaption {
-  margin-top: 15px;
-  padding-top: 14px;
-  border-top: 1px solid var(--line-strong);
-}
-
-.portrait-role {
-  color: var(--ink-strong);
-  font-size: 0.86rem;
-  font-weight: 740;
-}
-
-.portrait-meta {
-  margin-top: 2px;
-  color: var(--muted);
-  font-size: 0.78rem;
-}
-
-.profile-portrait a {
-  display: inline-block;
-  margin-top: 8px;
-  color: var(--navy-deep);
-  font-size: 0.78rem;
-  font-weight: 680;
-  overflow-wrap: anywhere;
 }
 
 .impact-section {
@@ -1228,15 +1185,6 @@ body.tema-terminal {
   letter-spacing: -0.025em;
 }
 
-.tema-terminal .foto-perfil {
-  width: 120px;
-  height: 120px;
-  margin-bottom: 20px;
-  object-fit: cover;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-}
-
 .tema-terminal .barra-lateral p + p,
 .tema-terminal .barra-lateral p + ul,
 .tema-terminal .barra-lateral ul + p {
@@ -1453,23 +1401,6 @@ body.tema-terminal {
     padding-block: 64px;
   }
 
-  .profile-portrait {
-    display: grid;
-    width: min(100%, 430px);
-    grid-template-columns: 128px minmax(0, 1fr);
-    gap: 22px;
-    align-items: center;
-    justify-self: start;
-  }
-
-  .profile-portrait figcaption {
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 20px;
-    border-top: 0;
-    border-left: 1px solid var(--line-strong);
-  }
-
   .impact-layout {
     grid-template-columns: 1fr;
   }
@@ -1567,15 +1498,6 @@ body.tema-terminal {
 
   .button-row .button {
     width: 100%;
-  }
-
-  .profile-portrait {
-    grid-template-columns: 104px minmax(0, 1fr);
-    gap: 16px;
-  }
-
-  .profile-portrait figcaption {
-    padding-left: 16px;
   }
 
   .impact-grid article {

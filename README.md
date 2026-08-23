@@ -67,7 +67,7 @@ runtime is required.
 
 ## License
 
-The portfolio's personal copy, resume, and portrait are not licensed for reuse.
+The portfolio's personal copy and resume are not licensed for reuse.
 Individual featured projects use the licenses declared in their own repositories.
 
 Originally created as a static web-development project and later redesigned into a
