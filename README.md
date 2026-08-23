@@ -16,11 +16,11 @@ distributed systems, financial workflows, and security.
 - [FinanceBuddy](https://github.com/salmoriadev/FinanceBuddy) — modular Node.js and
   NestJS backend for manually managed personal-finance workflows.
 
-Additional project cards cover [IpeSign](https://github.com/salmoriadev/IpeSign),
-[Preparação DataDriven](https://www.preparacaodatadriven.com.br/), and the
-[IAA Calculator](https://github.com/salmoriadev/IaaCalcutator). Each displayed project
-includes a real product capture or a repository-based architecture visual that is
-explicitly labeled when it is not a product screenshot.
+Additional project cards cover [AegisIR](https://github.com/salmoriadev/aegisir),
+[IpeSign](https://github.com/salmoriadev/IpeSign), and a
+[digital-signature implementation in Go](https://github.com/salmoriadev/aprendendo_go/tree/main/cripto).
+Each displayed project includes a real product capture or a repository-based
+implementation visual that is explicitly labeled when it is not a product screenshot.
 
 ## Technology
 

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Digital Signature in Go implementation flow</title>
+  <desc id="desc">An editorial diagram showing RSA key generation, X.509 certificate issuance, SHA-256 document hashing, PKCS number 1 version 1.5 signing, and signature verification.</desc>
+  <rect width="1280" height="720" fill="#f4f0e7"/>
+  <path d="M0 604c192-31 370 64 603 27 276-43 443-33 677 26v63H0z" fill="#e9e2d6"/>
+  <g fill="none" stroke="#cfc7b8" stroke-width="1" opacity=".72">
+    <path d="M64 92h1152M64 628h1152M64 92v536M1216 92v536"/>
+    <path d="M64 166h1152M64 556h1152" stroke-dasharray="4 10"/>
+  </g>
+  <text x="72" y="58" fill="#a65d3d" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">REPOSITORY-BASED IMPLEMENTATION MAP</text>
+  <text x="72" y="145" fill="#102f42" font-family="Arial, sans-serif" font-size="54" font-weight="700">Digital Signature in Go</text>
+  <text x="72" y="181" fill="#5c6c75" font-family="Arial, sans-serif" font-size="20">A complete learning flow for certificate issuance, PDF signing, and verification.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="72" y="246" width="250" height="218" rx="12" fill="#102f42"/>
+    <text x="96" y="284" fill="#d9a15f" font-size="13" font-weight="700" letter-spacing="2">01 · IDENTITY</text>
+    <text x="96" y="334" fill="#fffdf7" font-size="26" font-weight="700">RSA keys</text>
+    <text x="96" y="371" fill="#c6d1d6" font-size="16">Root CA certificate</text>
+    <text x="96" y="401" fill="#c6d1d6" font-size="16">User certificate</text>
+    <text x="96" y="433" fill="#8fa5b0" font-family="monospace" font-size="14">crypto/rsa · crypto/x509</text>
+
+    <path d="M338 355h50" stroke="#a65d3d" stroke-width="3"/>
+    <path d="m379 346 13 9-13 9" fill="none" stroke="#a65d3d" stroke-width="3"/>
+
+    <rect x="408" y="226" width="390" height="258" rx="12" fill="#fffdf7" stroke="#d4cdc0"/>
+    <text x="436" y="266" fill="#a65d3d" font-size="13" font-weight="700" letter-spacing="2">02 · DOCUMENT</text>
+    <text x="436" y="321" fill="#102f42" font-size="28" font-weight="700">PDF → SHA-256 digest</text>
+    <text x="436" y="359" fill="#5c6c75" font-size="17">Sign the digest with the user's</text>
+    <text x="436" y="387" fill="#5c6c75" font-size="17">RSA private key using PKCS#1 v1.5.</text>
+    <rect x="436" y="415" width="334" height="42" rx="6" fill="#e9eef0"/>
+    <text x="455" y="442" fill="#173b52" font-family="monospace" font-size="15">sha256.Sum256(document.pdf)</text>
+
+    <path d="M814 355h50" stroke="#a65d3d" stroke-width="3"/>
+    <path d="m855 346 13 9-13 9" fill="none" stroke="#a65d3d" stroke-width="3"/>
+
+    <rect x="884" y="246" width="332" height="218" rx="12" fill="#102f42"/>
+    <text x="910" y="284" fill="#d9a15f" font-size="13" font-weight="700" letter-spacing="2">03 · VERIFICATION</text>
+    <text x="910" y="334" fill="#fffdf7" font-size="26" font-weight="700">Public-key check</text>
+    <text x="910" y="371" fill="#c6d1d6" font-size="16">Validate the stored signature</text>
+    <text x="910" y="401" fill="#c6d1d6" font-size="16">against the original PDF digest.</text>
+    <text x="910" y="433" fill="#8fa5b0" font-family="monospace" font-size="14">rsa.VerifyPKCS1v15</text>
+  </g>
+  <g font-family="monospace" font-size="15">
+    <text x="72" y="594" fill="#173b52">Go</text>
+    <text x="109" y="594" fill="#8b9aa2">/</text>
+    <text x="136" y="594" fill="#173b52">RSA</text>
+    <text x="177" y="594" fill="#8b9aa2">/</text>
+    <text x="204" y="594" fill="#173b52">X.509</text>
+    <text x="260" y="594" fill="#8b9aa2">/</text>
+    <text x="287" y="594" fill="#173b52">SHA-256</text>
+    <text x="362" y="594" fill="#8b9aa2">/</text>
+    <text x="389" y="594" fill="#173b52">PKCS#1 v1.5</text>
+    <text x="730" y="594" fill="#a65d3d" font-size="14">Educational Go implementation · artifacts written to disk</text>
+  </g>
+</svg>
